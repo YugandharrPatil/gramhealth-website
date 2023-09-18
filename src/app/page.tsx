@@ -1,3 +1,5 @@
+import Beauty from "@/components/beauty";
+import Concerns from "@/components/concerns";
 import Footer from "@/components/footer";
 import Header from "@/components/header";
 import Main from "@/components/main";
@@ -9,6 +11,8 @@ export default function HomePage() {
 			<Navbar />
 			<Header />
 			<Main />
+			<Concerns />
+			<Beauty />
 			<Footer />
 		</>
 	);
