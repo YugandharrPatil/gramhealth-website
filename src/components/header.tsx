@@ -14,8 +14,10 @@ export default function Header() {
 						GramHealth brings you a hassle-free experience of getting your pharmaceutical needs at your doorstep
 					</p>
 					<div className="buttons flex gap-4 mt-10">
-						<Button>View Products</Button>
-						<Button>Order Now</Button>
+						<Button variant="headerOutline">View Products</Button>
+						<Button variant="headerSolid" className="px-7">
+							Order Now
+						</Button>
 					</div>
 				</div>
 				<div className="image bg-black w-1/2"></div>
