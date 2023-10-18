@@ -1,4 +1,6 @@
+import { Menu } from "lucide-react";
 import Link from "next/link";
+import NavDropDown from "./nav-dropdown";
 import NavItem from "./nav-item";
 import { Button } from "./ui/button";
 
@@ -12,14 +14,15 @@ export default function Navbar() {
 						<span className="bg-gradient-to-tr from-[#2EEB31] to=[#000044] inline-block text-transparent bg-clip-text">H</span>ealth
 					</h1>
 				</Link>
-				<div className="flex gap-4">
+				<div className="md:flex gap-4 hidden">
 					<div className="">
 						<NavItem target="#" variant="navItemGhost" navText="Home" />
-						<NavItem target="#" variant="navItemGhost" navText="Products" />
-						<NavItem target="#" variant="navItemGhost" navText="Contact Us" />
-						<NavItem target="#" variant="navItemOutline" navText="Visit Store" />
+						<NavItem target="/products" variant="navItemGhost" navText="Products" />
+						<NavItem target="/contact" variant="navItemGhost" navText="Contact Us" />
+						<NavItem target="/store" variant="navItemOutline" navText="Visit Store" />
 					</div>
 				</div>
+				<NavDropDown />
 			</div>
 		</nav>
 	);

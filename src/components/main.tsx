@@ -30,7 +30,7 @@ export default function Main() {
 				<h1 className="text-4xl font-semibold text-center">Shop by Categories</h1>
 				{/* Data to be fetched from database here (items, price, images, etc). For now, state implemented with zustand for easy sending state up */}
 				{/* Yet to implement state with Zustand */}
-				<div className="mt-3 flex w-5/12 justify-between mx-auto">
+				<div className="mt-3 flex w-5/12 gap-4 mx-auto">
 					<CategoryButton onClick={setAll} icon="iconURL" text={CATEGORIES.all} />
 					<CategoryButton onClick={setPharma} icon="iconURL" text={CATEGORIES.pharma} />
 					<CategoryButton onClick={setDental} icon="iconURL" text={CATEGORIES.dental} />
